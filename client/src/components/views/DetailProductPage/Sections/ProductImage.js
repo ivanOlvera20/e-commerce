@@ -11,8 +11,8 @@ function ProductImage(props) {
       props.detail.images &&
         props.detail.images.map(item => {
           images.push({
-            original: `https://vivocel.herokuapp.com/${item}`,
-            thumbnail: `https://vivocel.herokuapp.com/${item}`
+            original: `https://vivocelserver.herokuapp.com/${item}`,
+            thumbnail: `https://vivocelserver.herokuapp.com/${item}`
           });
         });
       setImages(images);

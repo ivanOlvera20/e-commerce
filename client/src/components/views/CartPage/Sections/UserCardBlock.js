@@ -4,7 +4,7 @@ function UserCardBlock(props) {
   const renderCartImage = images => {
     if (images.length > 0) {
       let image = images[0];
-      return `https://vivocel.herokuapp.com/${image}`;
+      return `https://vivocelserver.herokuapp.com/${image}`;
     }
   };
 
