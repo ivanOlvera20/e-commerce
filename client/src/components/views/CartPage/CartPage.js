@@ -6,9 +6,9 @@ import {
   onSuccessBuy
 } from "../../../_actions/user_actions";
 import UserCardBlock from "./Sections/UserCardBlock";
-import { Result, Empty } from "antd";
-import Axios from "axios";
 import Paypal from "../../utils/Paypal";
+import { Result, Empty, Button } from "antd";
+import Axios from "axios";
 function CartPage(props) {
   const dispatch = useDispatch();
   const [Total, setTotal] = useState(0);
@@ -82,7 +82,6 @@ function CartPage(props) {
       }
     });
   };
-
   const transactionError = () => {
     console.log("Paypal error");
   };
@@ -90,7 +89,6 @@ function CartPage(props) {
   const transactionCanceled = () => {
     console.log("Transaction canceled");
   };
-
   return (
     <div style={{ width: "85%", margin: "3rem auto" }}>
       <h1>Mi Carrito</h1>
@@ -121,9 +119,6 @@ function CartPage(props) {
           </div>
         )}
       </div>
-
-      {/* Paypal Button */}
-
       {ShowTotal && (
         <Paypal
           toPay={Total}
