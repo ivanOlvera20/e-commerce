@@ -1,72 +1,65 @@
-
 const price = [
-    {
-        "_id": 0,
-        "name": "Any",
-        "array": []
-    },
-    {
-        "_id": 1,
-        "name": "$0 to $199",
-        "array": [0, 199]
-    },
-    {
-        "_id": 2,
-        "name": "$200 to $249",
-        "array": [200, 249]
-    },
-    {
-        "_id": 3,
-        "name": "$250 to $279",
-        "array": [250, 279]
-    },
-    {
-        "_id": 4,
-        "name": "$280 to $299",
-        "array": [280, 299]
-    },
-    {
-        "_id": 5,
-        "name": "More than $300",
-        "array": [300, 1500000]
-    }
-]
+  {
+    _id: 0,
+    name: "Todos",
+    array: []
+  },
+  {
+    _id: 1,
+    name: "$0 to $2,000",
+    array: [0, 1999]
+  },
+  {
+    _id: 2,
+    name: "$2,000 to $5,000",
+    array: [2000, 4999]
+  },
+  {
+    _id: 3,
+    name: "$5,000 to $10,000",
+    array: [5000, 9999]
+  },
+  {
+    _id: 4,
+    name: "$10,000 to $20,0000",
+    array: [10000, 19999]
+  },
+  {
+    _id: 5,
+    name: "More than $20,0000",
+    array: [20000, 1500000]
+  }
+];
 
+const marcas = [
+  {
+    _id: 1,
+    name: "Apple"
+  },
+  {
+    _id: 2,
+    name: "Xiaomi"
+  },
+  {
+    _id: 3,
+    name: "Huawei"
+  },
+  {
+    _id: 4,
+    name: "Motorola"
+  },
+  {
+    _id: 5,
+    name: "Sony"
+  },
+  {
+    _id: 6,
+    name: "Samsung"
+  },
+  {
+    _id: 7,
+    name: "Nokia"
+  }
+];
 
-
-const continents = [
-    {
-        "_id": 1,
-        "name": "Africa"
-    },
-    {
-        "_id": 2,
-        "name": "Europe"
-    },
-    {
-        "_id": 3,
-        "name": "Asia"
-    },
-    {
-        "_id": 4,
-        "name": "North America"
-    },
-    {
-        "_id": 5,
-        "name": "South America"
-    },
-    {
-        "_id": 6,
-        "name": "Australia"
-    },
-    {
-        "_id": 7,
-        "name": "Antarctica"
-    }
-]
-
-
-export {
-    price,
-    continents
-}
+export { price, marcas };
