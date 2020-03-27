@@ -1,4 +1,3 @@
-/node_modules
 /build
 
 dev.js
@@ -11,3 +10,4 @@ yarn-debug.kog*
 yarn-error.log*
 
 .vscode
+node_modules
